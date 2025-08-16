@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_BpPartnerFunctionDa_S'
+define service ZUI_BPPARTNERFUNCTIONDA {
+  expose ZI_BPPARTNERFUNCTIONDA_S as BpPartnerFunctioAll;
+  expose ZI_BPPARTNERFUNCTIONDA as BpPartnerFunctionDa;
+}

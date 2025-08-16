@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "ZSD_TRANSIT",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ZSD_TRANSIT"
+  },
+  "ui5AppDetails": {
+    "appId": "ztransitvehicle.ztransitvehicle"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_AC76A817EE308D6D26DB4CE043511EE8076EFC26_TM",
+    "semanticObject": "ZTRANSIT_SO",
+    "action": "DISPLAY",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_AC76A817EE308D6D26DB4CE043511EE8076EFC26_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZSD_TRANSIT",
+        "subtitle": "Transit Vehicle Report"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "IRN DSC PRINT",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "IRN DSC PRINT"
+  },
+  "ui5AppDetails": {
+    "appId": "zdscirn"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_46CEFE12710A7ABD968FF427D3BA864EB6422C20_TM",
+    "semanticObject": "ZDSCIRN",
+    "action": "Print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_46CEFE12710A7ABD968FF427D3BA864EB6422C20_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "IRN DSC PRINT",
+        "subtitle": "ZDSC"
+      }
+    }
+  ]
+}

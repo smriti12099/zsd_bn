@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Bank Table App",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Bank Table App"
+  },
+  "ui5AppDetails": {
+    "appId": "zbankapp"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9CB5DFBC6D2C611E9A09A82EDB68F8C17647A44A_TM",
+    "semanticObject": "zso_bank_app",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9CB5DFBC6D2C611E9A09A82EDB68F8C17647A44A_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Bank Table App",
+        "subtitle": "zbank"
+      }
+    }
+  ]
+}

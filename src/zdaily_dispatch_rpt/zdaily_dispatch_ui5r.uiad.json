@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "ZDAILY_DISPATCH",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ZDAILY_DISPATCH"
+  },
+  "ui5AppDetails": {
+    "appId": "zdailydispatch.zdailydispatch"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D1CF8EC7E050AD957707C14B56A40719438464C1_TM",
+    "semanticObject": "ZDAILY_DISPATCH_SO",
+    "action": "DISPLAY",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D1CF8EC7E050AD957707C14B56A40719438464C1_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZDAILY_DISPATCH",
+        "subtitle": "Daily Dispatch Report"
+      }
+    }
+  ]
+}

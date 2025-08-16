@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Integration Table",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Integration Table"
+  },
+  "ui5AppDetails": {
+    "appId": "zintegrationtab"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D9FA403407369150A1B2665CA9264D18052A08A7_TM",
+    "semanticObject": "zso_integration",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D9FA403407369150A1B2665CA9264D18052A08A7_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Integration Table",
+        "subtitle": "zintegration"
+      }
+    }
+  ]
+}

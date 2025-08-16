@@ -1,0 +1,4 @@
+@EndUserText.label: 'Sales Contract Service Definition'
+define service ZS_SALESCT_SRV {
+  expose ZC_SALESCONTRACT as A_SalesContract;
+}

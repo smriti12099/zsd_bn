@@ -1,0 +1,214 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'PlantTable', 
+    typeNamePlural: 'PlantTables', 
+    title: {
+      type: #STANDARD, 
+      label: 'Plant Table', 
+      value: 'CompCode'
+    }
+  }
+}
+annotate view ZI_PlantTable with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_PlantTable', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Plant Table', 
+    position: 1 
+  } ]
+  CompCode;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  PlantCode;
+
+//   @UI.identification: [ {
+//    position: 2.1 
+//  } ]
+//  @UI.lineItem: [ {
+//    position: 2.1 
+//  } ]
+//  CompanyName;
+  
+  @UI.identification: [ {
+    position: 3 , 
+    label: 'PlantName1'
+  } ]
+  @UI.lineItem: [ {
+    position: 3 , 
+    label: 'PlantName1'
+  } ]
+  PlantName1;
+  
+  @UI.identification: [ {
+    position: 4 , 
+    label: 'PlantName2'
+  } ]
+  @UI.lineItem: [ {
+    position: 4 , 
+    label: 'PlantName2'
+  } ]
+  PlantName2;
+  
+  @UI.identification: [ {
+    position: 5 , 
+    label: 'Address1'
+  } ]
+  @UI.lineItem: [ {
+    position: 5 , 
+    label: 'Address1'
+  } ]
+  Address1;
+  
+  @UI.identification: [ {
+    position: 6 , 
+    label: 'Address2'
+  } ]
+  @UI.lineItem: [ {
+    position: 6 , 
+    label: 'Address2'
+  } ]
+  Address2;
+  
+  @UI.identification: [ {
+    position: 7 , 
+    label: 'Address3'
+  } ]
+  @UI.lineItem: [ {
+    position: 7 , 
+    label: 'Address3'
+  } ]
+  Address3;
+  
+  @UI.identification: [ {
+    position: 8 , 
+    label: 'City'
+  } ]
+  @UI.lineItem: [ {
+    position: 8 , 
+    label: 'City'
+  } ]
+  City;
+  
+  @UI.identification: [ {
+    position: 9 , 
+    label: 'District'
+  } ]
+  @UI.lineItem: [ {
+    position: 9 , 
+    label: 'District'
+  } ]
+  District;
+  
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'StateCode1'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'StateCode1'
+  } ]
+  StateCode1;
+  
+  @UI.identification: [ {
+    position: 11 , 
+    label: 'StateCode2'
+  } ]
+  StateCode2;
+  
+  @UI.identification: [ {
+    position: 12 , 
+    label: 'StateName'
+  } ]
+  StateName;
+  
+  @UI.identification: [ {
+    position: 13 , 
+    label: 'Pin'
+  } ]
+  Pin;
+  
+  @UI.identification: [ {
+    position: 14 , 
+    label: 'Country'
+  } ]
+  Country;
+  
+  @UI.identification: [ {
+    position: 15 , 
+    label: 'CinNo'
+  } ]
+  CinNo;
+  
+  @UI.identification: [ {
+    position: 16 , 
+    label: 'GstinNo'
+  } ]
+  GstinNo;
+  
+  @UI.identification: [ {
+    position: 17 , 
+    label: 'PanNo'
+  } ]
+  PanNo;
+  
+  @UI.identification: [ {
+    position: 18 , 
+    label: 'TanNo'
+  } ]
+  TanNo;
+  
+   @UI.identification: [ {
+    position: 20 , 
+    label: 'Email'
+  } ]
+  Email;                            
+  
+    @UI.identification: [ {
+    position: 21 , 
+    label: 'Mobile No/Phone No'      
+  } ]
+  MobNo;
+  
+  @UI.identification: [ {
+    position: 19 , 
+    label: 'FSSAI No'                // Remarks 1 Field 
+  } ]
+  FssaiNo;
+  
+    @UI.identification: [ {
+    position: 22 , 
+    label: 'Remark1'
+  } ]                               
+  Remark1;                      // FSSAI No Field -( FssaiNo )
+  
+  @UI.identification: [ {
+    position: 23 , 
+    label: 'Remark2'
+  } ]
+  Remark2;                     
+  
+  @UI.identification: [ {
+    position: 24 , 
+    label: 'Remark3'
+  } ]
+  Remark3;    
+   @UI.identification: [ {
+    position: 25 , 
+    label: 'Weight Path'
+  } ]
+  WeightPath;                   
+}

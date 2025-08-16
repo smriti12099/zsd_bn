@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition for sales order'
+define service Zsd_so_print_odatav2 {
+  expose zr_sales_order_print;
+}

@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Plant Table App",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Plant Table App"
+  },
+  "ui5AppDetails": {
+    "appId": "zplanttableapp"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_929C8189F3B025F0E95D2A4A1B8DD1B914B08A85_TM",
+    "semanticObject": "zso_plant_table_app",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_929C8189F3B025F0E95D2A4A1B8DD1B914B08A85_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Plant Table App",
+        "subtitle": "zplant"
+      }
+    }
+  ]
+}

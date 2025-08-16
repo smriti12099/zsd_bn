@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Subcon Challan Print'
+define service ZSD_SUBCON_CHALLAN_PRINT {
+  expose ZCDS_SUBCON_PRINT;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition of transit vehicle'
+define service ZSD_ztransit_vehicle {
+  expose zdd_transit;
+}

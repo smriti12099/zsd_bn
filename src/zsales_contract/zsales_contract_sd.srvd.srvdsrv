@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definations for Sales Contract Report'
+define service ZSALES_CONTRACT_SD {
+  expose ZSALES_CONTRACT_CDS;
+}

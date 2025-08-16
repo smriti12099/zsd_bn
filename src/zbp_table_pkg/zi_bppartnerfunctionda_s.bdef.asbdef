@@ -1,0 +1,92 @@
+managed implementation in class ZBP_I_BPPARTNERFUNCTIONDA_S unique;
+strict;
+with draft;
+define behavior for ZI_BpPartnerFunctionDa_S alias BpPartnerFunctioAll
+draft table zdt_bp_part_d_s
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master ( global )
+
+{
+  field ( readonly )
+  SingletonID;
+
+  field ( notrigger )
+  SingletonID,
+  LastChangedAtMax;
+
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  association _BpPartnerFunctionDa { create ( features : instance ); with draft; }
+}
+
+define behavior for ZI_BpPartnerFunctionDa alias BpPartnerFunctionDa ##UNMAPPED_FIELD
+persistent table zdt_bp_partner
+draft table zdt_bp_partne_d
+etag master LocalLastChangedAt
+lock dependent by _BpPartnerFunctioAll
+authorization dependent by _BpPartnerFunctioAll
+
+{
+  field ( mandatory : create )
+  Customer,
+  SalesOrg,
+  DistChannel,
+  Division;
+
+  field ( readonly )
+  SingletonID,
+  CreatedBy,
+  CreatedAt,
+  LocalLastChangedBy,
+  LocalLastChangedAt,
+  LastChangedAt;
+
+  field ( readonly : update )
+  Customer,
+  SalesOrg,
+  DistChannel,
+  Division;
+
+  field ( notrigger )
+  SingletonID,
+  CreatedBy,
+  CreatedAt,
+  LocalLastChangedBy,
+  LocalLastChangedAt,
+  LastChangedAt;
+
+
+  update ( features : global );
+  delete ( features : global );
+
+  factory action ( features : instance ) CopyBpPartnerFunctionDa parameter ZD_CopyBpPartnerFunctionDaP [1];
+
+  mapping for zdt_bp_partner
+    {
+      Customer           = CUSTOMER;
+      SalesOrg           = SALES_ORG;
+      DistChannel        = DIST_CHANNEL;
+      Division           = DIVISION;
+      PartnerFunction    = PARTNER_FUNCTION;
+      Bpcustomernumber   = BPCUSTOMERNUMBER;
+      Processed          = processed;
+      Log                = LOG;
+      CreatedBy          = CREATED_BY;
+      CreatedAt          = CREATED_AT;
+      LocalLastChangedBy = LOCAL_LAST_CHANGED_BY;
+      LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+      LastChangedAt      = LAST_CHANGED_AT;
+    }
+
+  association _BpPartnerFunctioAll { with draft; }
+}

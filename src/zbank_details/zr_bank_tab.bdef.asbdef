@@ -1,0 +1,51 @@
+managed implementation in class ZBP_R_BANK_TAB unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_BANK_TAB alias ZrBankTab
+persistent table ZBANK_TAB
+draft table ZBANK_TAB_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   Salesorg,
+   Distributionchannel;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   Salesorg,
+   Distributionchannel;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZBANK_TAB
+  {
+    Salesorg = salesorg;
+    Distributionchannel = distributionchannel;
+    BankDetails = bank_details;
+    AcoountNumber = acoount_number;
+    IfscCode = ifsc_code;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+}

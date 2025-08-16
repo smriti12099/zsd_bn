@@ -1,0 +1,139 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Salesorg'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Salesorg'
+annotate view ZC_BANK_TAB with
+{
+  @EndUserText.label: 'Sales Organisation'
+  @UI.facet: [ {
+    label: 'General Information',
+    id: 'GeneralInfo',
+    purpose: #STANDARD,
+    position: 10 ,
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'Sales Organisation'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 ,
+    label: 'Sales Organisation'
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  Salesorg;
+
+  @EndUserText.label: 'Distribution Channel'
+  @UI.identification: [ {
+    position: 20 ,
+    label: 'Distribution Channel'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 ,
+    label: 'Distribution Channel'
+  } ]
+  @UI.selectionField: [ {
+    position: 20
+  } ]
+  Distributionchannel;
+
+  @EndUserText.label: 'Bank Details'
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'Bank Details'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 ,
+    label: 'Bank Details'
+  } ]
+  @UI.selectionField: [ {
+    position: 30
+  } ]
+  BankDetails;
+
+  @EndUserText.label: 'Account Number'
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'Account Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 ,
+    label: 'Account Number'
+  } ]
+  @UI.selectionField: [ {
+    position: 40
+  } ]
+  AcoountNumber;
+
+  @EndUserText.label: 'Ifsc Code'
+  @UI.identification: [ {
+    position: 50 ,
+    label: 'Ifsc Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 ,
+    label: 'Ifsc Code'
+  } ]
+  @UI.selectionField: [ {
+    position: 50
+  } ]
+  IfscCode;
+
+  @UI.identification: [ {
+    position: 60
+  } ]
+  @UI.lineItem: [ {
+    position: 60
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 60
+  //  } ]
+  CreatedBy;
+
+  @UI.identification: [ {
+    position: 70
+  } ]
+  @UI.lineItem: [ {
+    position: 70
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 70
+  //  } ]
+  CreatedAt;
+
+  @UI.identification: [ {
+    position: 80
+  } ]
+  @UI.lineItem: [ {
+    position: 80
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 80
+  //  } ]
+  LocalLastChangedBy;
+
+  @UI.identification: [ {
+    position: 90
+  } ]
+  @UI.lineItem: [ {
+    position: 90
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 90
+  //  } ]
+  LocalLastChangedAt;
+
+  @UI.identification: [ {
+    position: 100
+  } ]
+  @UI.lineItem: [ {
+    position: 100
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 100
+  //  } ]
+  LastChangedAt;
+}

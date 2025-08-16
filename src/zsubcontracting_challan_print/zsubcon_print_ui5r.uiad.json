@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Subcontracting Challan Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Subcontracting Challan Print"
+  },
+  "ui5AppDetails": {
+    "appId": "zsubcontractingchallanprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_97E4F45950DF5DDD4AC5752825BE216C3A7459BF_TM",
+    "semanticObject": "zsubcon_print_so",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_97E4F45950DF5DDD4AC5752825BE216C3A7459BF_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Subcontracting Challan Print",
+        "subtitle": "zsubcontract_challan_print"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Sales Contract Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Sales Contract Print"
+  },
+  "ui5AppDetails": {
+    "appId": "zsalesct"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_B0E566CCFF5A9AD3E42C4394FAE4FD3CC16533B9_TM",
+    "semanticObject": "ZSalesCTPrint",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_B0E566CCFF5A9AD3E42C4394FAE4FD3CC16533B9_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Sales Contract Print",
+        "subtitle": "zsalesctprint"
+      }
+    }
+  ]
+}

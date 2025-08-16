@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition For Daily Dispatch'
+define service Zsd_daily_dispatch {
+  expose zdd_daily_dispatch;
+}

@@ -1,0 +1,97 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'BpPartnerFunctionDa',
+    typeNamePlural: 'BpPartnerFunctionDas',
+    title: {
+      type: #STANDARD,
+      label: 'BP Partner Function Database Table',
+      value: 'Customer'
+    }
+  }
+}
+annotate view ZI_BpPartnerFunctionDa with
+{
+  @UI.identification: [ {
+    position: 1
+  } ]
+  @UI.lineItem: [ {
+    position: 1
+  },
+  {
+    type: #FOR_ACTION,
+    dataAction: 'CopyBpPartnerFunctionDa',
+    label: 'Copy Selected Entry',
+    invocationGrouping: #CHANGE_SET
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_BpPartnerFunctionDa',
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'BP Partner Function Database Table',
+    position: 1
+  } ]
+  Customer;
+
+  @UI.identification: [ {
+    position: 2
+  } ]
+  @UI.lineItem: [ {
+    position: 2
+  } ]
+  SalesOrg;
+
+  @UI.identification: [ {
+    position: 3
+  } ]
+  @UI.lineItem: [ {
+    position: 3
+  } ]
+  DistChannel;
+
+  @UI.identification: [ {
+    position: 4
+  } ]
+  @UI.lineItem: [ {
+    position: 4
+  } ]
+  Division;
+
+  @UI.identification: [ {
+    position: 5 ,
+    label: 'PartnerFunction'
+  } ]
+  @UI.lineItem: [ {
+    position: 5 ,
+    label: 'PartnerFunction'
+  } ]
+  PartnerFunction;
+
+  @UI.identification: [ {
+    position: 6 ,
+    label: 'Bpcustomernumber'
+  } ]
+  @UI.lineItem: [ {
+    position: 6 ,
+    label: 'Bpcustomernumber'
+  } ]
+  Bpcustomernumber;
+  @UI.identification: [ {
+   position: 7 ,
+   label: 'Processed'
+  } ]
+  @UI.lineItem: [ {
+    position: 7 ,
+    label: 'Processed'
+  } ]
+  Processed;
+  @UI.identification: [ {
+   position: 8 ,
+   label: 'Message'
+  } ]
+  @UI.lineItem: [ {
+    position: 8 ,
+    label: 'Message'
+  } ]
+  Log;
+}
